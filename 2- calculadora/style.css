@@ -1,0 +1,38 @@
+@charset "UTF-8";
+ 
+ /* Fontes e Estilos */
+@font-face {
+    font-family: calcFont;
+    src: url(fonts/digital-7.ttf);
+}
+:root{
+    --main: #333;
+    --number-color: #ffffff;
+}
+
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--main);
+}
+.container-calc{
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: var(--main);
+    padding: 40px 30px 30px;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25), 10px 10px 70px rgba(0,0,0,0.25);
+    inset: -5px -5px 15px rgba(0,0,0,0.25);
+}
+span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--number-color);
+}
