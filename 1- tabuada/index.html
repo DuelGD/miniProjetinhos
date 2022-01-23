@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <header>
+     <h1>Tabuada</h1>
+ </header>
+
+
+<body>
+ <div id="container" class="normal-div">
+     <div id="center">
+        <label for="num">Digite o Número ao lado:<input type="number" name="num" id="num"></label>
+        <input type="button" value="Gerar" id="gerar" onclick="gerar()">
+     </div>
+     <div>
+        <input type="button" value="anterior" id="back" class="inv" onclick="back()">
+        <select name="tabuada" id="tabuada" class="inv" size="10">
+         </select>
+         <input type="button" value="próximo" id="next" class="inv" onclick="next()">
+     </div>
+     <div class="container-btn">
+                <button class="btn" onclick="tema()">Mudar Tema</button>
+        </div>
+ </div>
+</body>
+
+
+<footer id="footer">
+    <p>&copy; pezinho</p>
+</footer>
+ 
+ 
+<script src="js.js"></script>
+</html>
